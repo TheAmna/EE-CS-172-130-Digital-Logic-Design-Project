@@ -1,5 +1,41 @@
-#EE/CS 172/130 Digital Logic and Design Project 
-This project aims to design a rave concert jacket that lights up with the frequency and beat of the music. 
+## Project Poster 
+
+## Team Members 
+
+- [Mahnum Ahmed](https://github.com/mahnum-ahmed)
+- [Aqsa Muneer](https://github.com/aqsa-muneer)
+- [Humna Khan](https://github.com/humna0809)
+- [Amna Ali](https://github.com/TheAmna)
+
+  
+## Project Description 
 
 
-[![Rave Jacket](link-to-your-thumbnail-image.png)](link-to-your-hosted-video-url)
+## User Flow Diagram 
+
+
+
+## State Transition Diagram
+
+
+
+## Control Block 
+
+
+
+## VGA Screens 
+
+
+
+## Video Demo 
+
+
+
+
+## Challenges
+
+
+
+
+
+## Key Learnings 
