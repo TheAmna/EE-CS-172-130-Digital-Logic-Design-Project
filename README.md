@@ -1,4 +1,3 @@
-## Project Poster 
 
 ## Team Members 
 
