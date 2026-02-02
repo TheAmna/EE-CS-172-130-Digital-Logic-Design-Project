@@ -43,6 +43,11 @@ The user toggles one of the first 5 FPGA switches to select a song, which is dec
 
 
 
+https://github.com/user-attachments/assets/d3cadfa7-0b2a-42be-9f22-7b9d66e914e4
+
+
+*Sky full of stars*
+
 https://github.com/user-attachments/assets/3bf830f6-a55d-4fbd-bad5-69f5f1ec9651
 
 *Faded*
