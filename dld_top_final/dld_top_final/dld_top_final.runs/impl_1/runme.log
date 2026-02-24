@@ -1,0 +1,1140 @@
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: link_design -top top -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.270 . Memory (MB): peak = 1024.703 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6758 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.srcs/constrs_1/new/topconst.xdc]
+Finished Parsing XDC File [C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.srcs/constrs_1/new/topconst.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1024.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1024.703 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1024.703 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1ec1a98de
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1351.777 ; gain = 327.074
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: fbefa0af
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1560.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 51 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 10c460677
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1560.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 11ede2141
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1560.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 11ede2141
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1560.684 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 11ede2141
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1560.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 11ede2141
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1560.684 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               1  |              51  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.156 . Memory (MB): peak = 1560.684 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 18f88b39b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1560.684 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 12 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 24
+Ending PowerOpt Patch Enables Task | Checksum: 18f88b39b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 18f88b39b
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1692.902 ; gain = 132.219
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 18f88b39b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 18f88b39b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 1692.902 ; gain = 668.199
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.runs/impl_1/top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[10] (net: ws2812_inst/frame_addr_reg[9]_rep__0_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[9]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[11] (net: ws2812_inst/frame_addr_reg_n_0_[10]) which is driven by a register (ws2812_inst/frame_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[12] (net: ws2812_inst/frame_addr_reg_n_0_[11]) which is driven by a register (ws2812_inst/frame_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[13] (net: ws2812_inst/frame_addr_reg_n_0_[12]) which is driven by a register (ws2812_inst/frame_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[1] (net: ws2812_inst/frame_addr_reg_n_0_[0]) which is driven by a register (ws2812_inst/frame_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[2] (net: ws2812_inst/frame_addr_reg_n_0_[1]) which is driven by a register (ws2812_inst/frame_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[3] (net: ws2812_inst/frame_addr_reg_n_0_[2]) which is driven by a register (ws2812_inst/frame_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[4] (net: ws2812_inst/frame_addr_reg_n_0_[3]) which is driven by a register (ws2812_inst/frame_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[5] (net: ws2812_inst/frame_addr_reg[4]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[4]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[6] (net: ws2812_inst/frame_addr_reg[5]_rep__1_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[5]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[7] (net: ws2812_inst/frame_addr_reg[6]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[8] (net: ws2812_inst/frame_addr_reg[7]_rep__7_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[7]_rep__7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[9] (net: ws2812_inst/frame_addr_reg_n_0_[8]) which is driven by a register (ws2812_inst/frame_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[10] (net: ws2812_inst/frame_addr_reg[9]_rep__0_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[9]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[11] (net: ws2812_inst/frame_addr_reg_n_0_[10]) which is driven by a register (ws2812_inst/frame_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[12] (net: ws2812_inst/frame_addr_reg_n_0_[11]) which is driven by a register (ws2812_inst/frame_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[13] (net: ws2812_inst/frame_addr_reg_n_0_[12]) which is driven by a register (ws2812_inst/frame_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[7] (net: ws2812_inst/frame_addr_reg[6]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[8] (net: ws2812_inst/frame_addr_reg[7]_rep__7_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[7]_rep__7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[9] (net: ws2812_inst/frame_addr_reg_n_0_[8]) which is driven by a register (ws2812_inst/frame_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[0] (net: ws2812_inst/frame_addr_reg_n_0_[0]) which is driven by a register (ws2812_inst/frame_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[10] (net: ws2812_inst/frame_addr_reg_n_0_[10]) which is driven by a register (ws2812_inst/frame_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[11] (net: ws2812_inst/frame_addr_reg_n_0_[11]) which is driven by a register (ws2812_inst/frame_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[12] (net: ws2812_inst/frame_addr_reg_n_0_[12]) which is driven by a register (ws2812_inst/frame_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[1] (net: ws2812_inst/frame_addr_reg_n_0_[1]) which is driven by a register (ws2812_inst/frame_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[2] (net: ws2812_inst/frame_addr_reg_n_0_[2]) which is driven by a register (ws2812_inst/frame_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[3] (net: ws2812_inst/frame_addr_reg_n_0_[3]) which is driven by a register (ws2812_inst/frame_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[4] (net: ws2812_inst/frame_addr_reg[4]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[4]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[5] (net: ws2812_inst/frame_addr_reg[5]_rep__1_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[5]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[6] (net: ws2812_inst/frame_addr_reg[6]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[7] (net: ws2812_inst/frame_addr_reg[7]_rep__7_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[7]_rep__7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[8] (net: ws2812_inst/frame_addr_reg_n_0_[8]) which is driven by a register (ws2812_inst/frame_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[9] (net: ws2812_inst/frame_addr_reg[9]_rep__0_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[9]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[10] (net: ws2812_inst/frame_addr_reg_n_0_[10]) which is driven by a register (ws2812_inst/frame_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[11] (net: ws2812_inst/frame_addr_reg_n_0_[11]) which is driven by a register (ws2812_inst/frame_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[12] (net: ws2812_inst/frame_addr_reg_n_0_[12]) which is driven by a register (ws2812_inst/frame_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[6] (net: ws2812_inst/frame_addr_reg[6]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[7] (net: ws2812_inst/frame_addr_reg[7]_rep__7_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[7]_rep__7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[8] (net: ws2812_inst/frame_addr_reg_n_0_[8]) which is driven by a register (ws2812_inst/frame_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[9] (net: ws2812_inst/frame_addr_reg[9]_rep__0_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[9]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: cd53e96f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d9dbc740
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1b13e9876
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1b13e9876
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1b13e9876
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 13e4c6f7d
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 106 LUTNM shape to break, 330 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 23, two critical 83, total 106, new lutff created 3
+INFO: [Physopt 32-775] End 1 Pass. Optimized 246 nets or cells. Created 106 new cells, deleted 140 existing cells and moved 0 existing cell
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net u_vis/frame_addr_reg[2]. Replicated 28 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 28 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 28 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          106  |            140  |                   246  |           0  |           1  |  00:00:01  |
+|  Very High Fanout                                 |           28  |              0  |                     1  |           0  |           1  |  00:00:03  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          134  |            140  |                   247  |           0  |           8  |  00:00:04  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 14ec49e94
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:06 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 2.2 Global Placement Core | Checksum: 172654903
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 172654903
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:08 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18d87f7bf
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:12 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16cbb20dd
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:20 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1374bb54a
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:20 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 15a211f73
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:20 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 107ed03b3
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:39 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1cb70bff9
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:55 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 19d17dcbe
+
+Time (s): cpu = 00:02:18 ; elapsed = 00:02:00 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: efe277a3
+
+Time (s): cpu = 00:02:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 114d7d306
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:02:30 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 114d7d306
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:02:30 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 180fabd57
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.019 | TNS=-217.460 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1ee9927b2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1b56bc860
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 180fabd57
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:43 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-3.575. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 20bc9c9e3
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:03:32 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 20bc9c9e3
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:03:33 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 20bc9c9e3
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:03:33 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 20bc9c9e3
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:03:33 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 1fd87d51c
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:03:34 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1fd87d51c
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:03:34 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Ending Placer Task | Checksum: 1310ed77b
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:03:34 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+71 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:04:00 ; elapsed = 00:03:38 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.runs/impl_1/top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.575 | TNS=-213.652 |
+Phase 1 Physical Synthesis Initialization | Checksum: 18bfdb35f
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.575 | TNS=-213.652 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 18bfdb35f
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.575 | TNS=-213.652 |
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_rep__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[5]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.568 | TNS=-213.631 |
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[3]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.551 | TNS=-213.580 |
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[4]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.549 | TNS=-213.574 |
+INFO: [Physopt 32-572] Net ws2812_inst/beat_flash_cnt_reg[5]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN.  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[5]_replica
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.539 | TNS=-213.544 |
+INFO: [Physopt 32-572] Net ws2812_inst/beat_flash_cnt_reg[4]_repN was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[4]_repN.  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[4]_replica
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[4]_repN. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[4]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.530 | TNS=-213.517 |
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[11]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.527 | TNS=-213.508 |
+INFO: [Physopt 32-572] Net ws2812_inst/beat_flash_cnt_reg[7] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-663] Processed net ws2812_inst/beat_flash_cnt_reg[7].  Re-placed instance ws2812_inst/beat_flash_cnt_reg[7]
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.516 | TNS=-213.475 |
+INFO: [Physopt 32-663] Processed net ws2812_inst/beat_flash_cnt_reg[3].  Re-placed instance ws2812_inst/beat_flash_cnt_reg[3]
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.511 | TNS=-213.460 |
+INFO: [Physopt 32-572] Net ws2812_inst/beat_flash_cnt_reg[5]_repN_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN_2.  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[5]_replica_2
+INFO: [Physopt 32-572] Net ws2812_inst/beat_flash_cnt_reg[5]_repN_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_3
+INFO: [Physopt 32-710] Processed net ws2812_inst/beat_strobe_phase_rep__0_i_1_n_0. Critical path length was reduced through logic transformation on cell ws2812_inst/beat_strobe_phase_rep__0_i_1_comp.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.410 | TNS=-213.367 |
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0_repN.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_3_comp
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_9_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_9
+INFO: [Physopt 32-710] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0_repN. Critical path length was reduced through logic transformation on cell ws2812_inst/beat_strobe_phase_i_3_comp_2.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.408 | TNS=-213.379 |
+INFO: [Physopt 32-663] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0_repN_1.  Re-placed instance ws2812_inst/beat_strobe_phase_i_3_comp_1
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.396 | TNS=-213.265 |
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_3
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_6
+INFO: [Physopt 32-572] Net ws2812_inst/beat_strobe_phase_i_6_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.332 | TNS=-213.109 |
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_6
+INFO: [Physopt 32-572] Net ws2812_inst/beat_strobe_phase_i_6_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_16_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[15]_1[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_43_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_79_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net beat_strobe_phase_i_121_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.314 | TNS=-213.073 |
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_117_n_0.  Did not re-place instance beat_strobe_phase_i_117
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_117_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[17]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_60_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_80_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_130_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_126_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_126
+INFO: [Physopt 32-572] Net ws2812_inst/beat_strobe_phase_i_126_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_126_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_207_n_0.  Did not re-place instance beat_strobe_phase_i_207
+INFO: [Physopt 32-242] Processed net beat_strobe_phase_i_207_n_0. Rewired (signal push) ws2812_inst_n_74 to 1 loads. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net beat_strobe_phase_i_207_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.314 | TNS=-213.073 |
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_201_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_197_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_197
+INFO: [Physopt 32-710] Processed net ws2812_inst/beat_strobe_phase_i_201_n_0. Critical path length was reduced through logic transformation on cell ws2812_inst/beat_strobe_phase_i_201_comp.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_197_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.309 | TNS=-213.058 |
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_87_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_83_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_83
+INFO: [Physopt 32-572] Net ws2812_inst/beat_strobe_phase_i_83_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_135_n_0.  Did not re-place instance beat_strobe_phase_i_135
+INFO: [Physopt 32-134] Processed net beat_strobe_phase_i_135_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-572] Net beat_strobe_phase_i_135_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[25]_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_205_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_260_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_302_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_339_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_360_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_360
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_360_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.302 | TNS=-213.031 |
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_67_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.296 | TNS=-213.019 |
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[9]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.284 | TNS=-212.983 |
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[1]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.282 | TNS=-212.977 |
+INFO: [Physopt 32-601] Processed net ws2812_inst/beat_flash_cnt_reg[1]_repN. Net driver ws2812_inst/beat_flash_cnt_reg[1]_replica was replaced.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[1]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.280 | TNS=-212.971 |
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[14]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_209_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_264_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ws2812_inst/beat_strobe_phase_i_318_n_0.  Re-placed instance ws2812_inst/beat_strobe_phase_i_318
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_318_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.277 | TNS=-212.962 |
+INFO: [Physopt 32-601] Processed net ws2812_inst/beat_flash_cnt_reg[1]_repN. Net driver ws2812_inst/beat_flash_cnt_reg[1]_replica was replaced.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[1]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.277 | TNS=-212.962 |
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[3].  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[3]
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[3]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.277 | TNS=-212.962 |
+INFO: [Physopt 32-601] Processed net ws2812_inst/beat_flash_cnt_reg[3]_repN. Net driver ws2812_inst/beat_flash_cnt_reg[3]_replica was replaced.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[3]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.274 | TNS=-212.953 |
+INFO: [Physopt 32-572] Net ws2812_inst/beat_flash_cnt_reg[7] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[7].  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[7]
+INFO: [Physopt 32-81] Processed net ws2812_inst/beat_flash_cnt_reg[7]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.264 | TNS=-212.923 |
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_318_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_318
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_318_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_100MHz_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_100MHz. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN_2.  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[5]_replica_2
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_3
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_6
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_16_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[15]_1[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_43_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_79_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_117_n_0.  Did not re-place instance beat_strobe_phase_i_117
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_117_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[17]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_130_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_126_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_126_rewire
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_126_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.255 | TNS=-212.896 |
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[6].  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[6]
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_87_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_83_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_83
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_135_n_0.  Did not re-place instance beat_strobe_phase_i_135
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[25]_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_strobe_phase_i_373_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.252 | TNS=-212.887 |
+INFO: [Physopt 32-663] Processed net ws2812_inst/beat_flash_cnt_reg[1]_repN.  Re-placed instance ws2812_inst/beat_flash_cnt_reg[1]_replica
+INFO: [Physopt 32-735] Processed net ws2812_inst/beat_flash_cnt_reg[1]_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.246 | TNS=-212.869 |
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_371_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_371
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_371_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_100MHz_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_100MHz. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.246 | TNS=-212.869 |
+Phase 3 Critical Path Optimization | Checksum: 18bfdb35f
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 1692.902 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.246 | TNS=-212.869 |
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net ws2812_inst/beat_flash_cnt_reg[5]_repN_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN_2.  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[5]_replica_2
+INFO: [Physopt 32-572] Net ws2812_inst/beat_flash_cnt_reg[5]_repN_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_3
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_6
+INFO: [Physopt 32-572] Net ws2812_inst/beat_strobe_phase_i_6_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_16_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[15]_1[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_43_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_79_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_117_n_0.  Did not re-place instance beat_strobe_phase_i_117
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_117_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[17]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_60_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_87_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_83_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_83
+INFO: [Physopt 32-572] Net ws2812_inst/beat_strobe_phase_i_83_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_135_n_0.  Did not re-place instance beat_strobe_phase_i_135
+INFO: [Physopt 32-134] Processed net beat_strobe_phase_i_135_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-572] Net beat_strobe_phase_i_135_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[25]_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_205_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_260_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_302_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_339_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_i_356_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_371_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_371
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_371_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_100MHz_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_100MHz. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_reg_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN_2.  Did not re-place instance ws2812_inst/beat_flash_cnt_reg[5]_replica_2
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[5]_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_3
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_6
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_16_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[15]_1[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_43_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_54_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_reg_i_79_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_117_n_0.  Did not re-place instance beat_strobe_phase_i_117
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_117_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[17]_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_87_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_83_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_83
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net beat_strobe_phase_i_135_n_0.  Did not re-place instance beat_strobe_phase_i_135
+INFO: [Physopt 32-702] Processed net beat_strobe_phase_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_flash_cnt_reg[25]_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net ws2812_inst/beat_strobe_phase_i_371_n_0.  Did not re-place instance ws2812_inst/beat_strobe_phase_i_371
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_371_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ws2812_inst/beat_strobe_phase_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_100MHz_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_100MHz. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.246 | TNS=-212.869 |
+Phase 4 Critical Path Optimization | Checksum: 18bfdb35f
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:48 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-3.246 | TNS=-212.869 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.329  |          0.783  |           15  |              0  |                    28  |           0  |           2  |  00:00:32  |
+|  Total          |          0.329  |          0.783  |           15  |              0  |                    28  |           0  |           3  |  00:00:32  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 25d75c4da
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:48 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+333 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1692.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.runs/impl_1/top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1692.902 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: fca49844 ConstDB: 0 ShapeSum: 95cca23e RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: cacdc23d
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:07 . Memory (MB): peak = 1760.641 ; gain = 67.738
+Post Restoration Checksum: NetGraph: 471f5870 NumContArr: 83ae69cd Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: cacdc23d
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:08 . Memory (MB): peak = 1760.641 ; gain = 67.738
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: cacdc23d
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:08 . Memory (MB): peak = 1764.098 ; gain = 71.195
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: cacdc23d
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:08 . Memory (MB): peak = 1764.098 ; gain = 71.195
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 12cb2c3e8
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:23 . Memory (MB): peak = 1799.441 ; gain = 106.539
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.174 | TNS=-137.132| WHS=-0.114 | THS=-1.994 |
+
+Phase 2 Router Initialization | Checksum: 132b71f14
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1820.215 ; gain = 127.312
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 9965
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 9965
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 190eb8521
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:42 . Memory (MB): peak = 1839.332 ; gain = 146.430
+INFO: [Route 35-580] Design has 4 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              sys_clk_pin |                                                                ws2812_inst/beat_strobe_phase_reg_rep__0/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                   ws2812_inst/beat_strobe_phase_reg_rep/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                       ws2812_inst/beat_strobe_phase_reg/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                ws2812_inst/data_out_reg/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4460
+ Number of Nodes with overlaps = 662
+ Number of Nodes with overlaps = 158
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.230 | TNS=-363.944| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 20545d3ed
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:33 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 378
+ Number of Nodes with overlaps = 161
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.301 | TNS=-355.658| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: d7eb8025
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:02:46 . Memory (MB): peak = 1839.332 ; gain = 146.430
+Phase 4 Rip-up And Reroute | Checksum: d7eb8025
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:02:46 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 13b38bcd0
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:02:49 . Memory (MB): peak = 1839.332 ; gain = 146.430
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.144 | TNS=-339.998| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 7b333feb
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:51 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 7b333feb
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:02:51 . Memory (MB): peak = 1839.332 ; gain = 146.430
+Phase 5 Delay and Skew Optimization | Checksum: 7b333feb
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:02:51 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 4dbb4592
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:55 . Memory (MB): peak = 1839.332 ; gain = 146.430
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.082 | TNS=-327.385| WHS=0.123  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 4dbb4592
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:55 . Memory (MB): peak = 1839.332 ; gain = 146.430
+Phase 6 Post Hold Fix | Checksum: 4dbb4592
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:55 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.79702 %
+  Global Horizontal Routing Utilization  = 6.27486 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 59.4595%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 55.8824%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 72.0588%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 59aae4d0
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:56 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 59aae4d0
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:02:56 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: c5440a60
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:03:04 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-4.082 | TNS=-327.385| WHS=0.123  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: c5440a60
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:03:04 . Memory (MB): peak = 1839.332 ; gain = 146.430
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:03:04 . Memory (MB): peak = 1839.332 ; gain = 146.430
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+352 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:47 ; elapsed = 00:03:10 . Memory (MB): peak = 1839.332 ; gain = 146.430
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1839.332 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.runs/impl_1/top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1839.332 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1847.809 ; gain = 8.477
+INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/drali/Downloads/FINAL_FINAL_code.xpr/rave_jacket_finalscreens/rave_jacket_finalscreens.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1847.809 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+364 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 1865.516 ; gain = 17.707
+INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 19 06:23:21 2025...
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: open_checkpoint top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1024.668 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1024.668 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6757 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1354.449 ; gain = 8.973
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1354.449 ; gain = 8.973
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1354.449 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.1 (64-bit) build 2902540
+open_checkpoint: Time (s): cpu = 00:00:42 ; elapsed = 00:00:52 . Memory (MB): peak = 1354.449 ; gain = 329.781
+Command: write_bitstream -force top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[10] (net: ws2812_inst/frame_addr_reg[9]_rep__0_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[9]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[11] (net: ws2812_inst/frame_addr_reg_n_0_[10]) which is driven by a register (ws2812_inst/frame_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[12] (net: ws2812_inst/frame_addr_reg_n_0_[11]) which is driven by a register (ws2812_inst/frame_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[13] (net: ws2812_inst/frame_addr_reg_n_0_[12]) which is driven by a register (ws2812_inst/frame_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[1] (net: ws2812_inst/frame_addr_reg_n_0_[0]) which is driven by a register (ws2812_inst/frame_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[2] (net: ws2812_inst/frame_addr_reg_n_0_[1]) which is driven by a register (ws2812_inst/frame_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[3] (net: ws2812_inst/frame_addr_reg_n_0_[2]) which is driven by a register (ws2812_inst/frame_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[4] (net: ws2812_inst/frame_addr_reg_n_0_[3]) which is driven by a register (ws2812_inst/frame_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[5] (net: ws2812_inst/frame_addr_reg[4]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[4]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[6] (net: ws2812_inst/frame_addr_reg[5]_rep__1_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[5]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[7] (net: ws2812_inst/frame_addr_reg[6]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[8] (net: ws2812_inst/frame_addr_reg[7]_rep__7_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[7]_rep__7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_0 has an input control pin ws2812_inst/bar_heights_packed_reg_0/ADDRARDADDR[9] (net: ws2812_inst/frame_addr_reg_n_0_[8]) which is driven by a register (ws2812_inst/frame_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[10] (net: ws2812_inst/frame_addr_reg[9]_rep__0_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[9]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[11] (net: ws2812_inst/frame_addr_reg_n_0_[10]) which is driven by a register (ws2812_inst/frame_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[12] (net: ws2812_inst/frame_addr_reg_n_0_[11]) which is driven by a register (ws2812_inst/frame_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[13] (net: ws2812_inst/frame_addr_reg_n_0_[12]) which is driven by a register (ws2812_inst/frame_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[7] (net: ws2812_inst/frame_addr_reg[6]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[8] (net: ws2812_inst/frame_addr_reg[7]_rep__7_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[7]_rep__7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ws2812_inst/bar_heights_packed_reg_1 has an input control pin ws2812_inst/bar_heights_packed_reg_1/ADDRARDADDR[9] (net: ws2812_inst/frame_addr_reg_n_0_[8]) which is driven by a register (ws2812_inst/frame_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[0] (net: ws2812_inst/frame_addr_reg_n_0_[0]) which is driven by a register (ws2812_inst/frame_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[10] (net: ws2812_inst/frame_addr_reg_n_0_[10]) which is driven by a register (ws2812_inst/frame_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[11] (net: ws2812_inst/frame_addr_reg_n_0_[11]) which is driven by a register (ws2812_inst/frame_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[12] (net: ws2812_inst/frame_addr_reg_n_0_[12]) which is driven by a register (ws2812_inst/frame_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[1] (net: ws2812_inst/frame_addr_reg_n_0_[1]) which is driven by a register (ws2812_inst/frame_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[2] (net: ws2812_inst/frame_addr_reg_n_0_[2]) which is driven by a register (ws2812_inst/frame_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[3] (net: ws2812_inst/frame_addr_reg_n_0_[3]) which is driven by a register (ws2812_inst/frame_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[4] (net: ws2812_inst/frame_addr_reg[4]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[4]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[5] (net: ws2812_inst/frame_addr_reg[5]_rep__1_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[5]_rep__1) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[6] (net: ws2812_inst/frame_addr_reg[6]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[7] (net: ws2812_inst/frame_addr_reg[7]_rep__7_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[7]_rep__7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[8] (net: ws2812_inst/frame_addr_reg_n_0_[8]) which is driven by a register (ws2812_inst/frame_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/bar_heights_packed_reg_2 has an input control pin ws2812_inst/bar_heights_packed_reg_2/ADDRARDADDR[9] (net: ws2812_inst/frame_addr_reg[9]_rep__0_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[9]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[10] (net: ws2812_inst/frame_addr_reg_n_0_[10]) which is driven by a register (ws2812_inst/frame_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[11] (net: ws2812_inst/frame_addr_reg_n_0_[11]) which is driven by a register (ws2812_inst/frame_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[12] (net: ws2812_inst/frame_addr_reg_n_0_[12]) which is driven by a register (ws2812_inst/frame_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[6] (net: ws2812_inst/frame_addr_reg[6]_rep_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[6]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[7] (net: ws2812_inst/frame_addr_reg[7]_rep__7_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[7]_rep__7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[8] (net: ws2812_inst/frame_addr_reg_n_0_[8]) which is driven by a register (ws2812_inst/frame_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ws2812_inst/beat_intensity_reg_1 has an input control pin ws2812_inst/beat_intensity_reg_1/ADDRARDADDR[9] (net: ws2812_inst/frame_addr_reg[9]_rep__0_n_0) which is driven by a register (ws2812_inst/frame_addr_reg[9]_rep__0) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 42 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:03 ; elapsed = 00:01:03 . Memory (MB): peak = 1914.566 ; gain = 560.117
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 19 06:26:02 2025...

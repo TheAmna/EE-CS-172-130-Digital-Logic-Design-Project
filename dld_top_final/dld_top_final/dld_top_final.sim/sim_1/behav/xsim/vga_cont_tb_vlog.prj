@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../dldlab11.2.srcs/sources_1/new/clk_divider.v" \
+"../../../../dldlab11.2.srcs/sources_1/new/h_counter.v" \
+"../../../../dldlab11.2.srcs/sources_1/new/pixel_gen_module.v" \
+"../../../../dldlab11.2.srcs/sources_1/new/topmod.v" \
+"../../../../dldlab11.2.srcs/sources_1/new/v_counter.v" \
+"../../../../dldlab11.2.srcs/sources_1/new/vga_controller.v" \
+"../../../../dldlab11.2.srcs/sources_1/new/vga_sync.v" \
+"../../../../dldlab11.2.srcs/sim_1/new/vga_cont_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

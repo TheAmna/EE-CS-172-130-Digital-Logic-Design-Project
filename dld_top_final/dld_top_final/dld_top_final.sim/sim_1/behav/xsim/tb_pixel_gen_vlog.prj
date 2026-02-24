@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../dldlab10.srcs/sources_1/new/pixel_gen_module.v" \
+"../../../../dldlab10.srcs/sources_1/new/vga_sync.v" \
+"../../../../dldlab10.srcs/sim_1/new/pix_gentb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

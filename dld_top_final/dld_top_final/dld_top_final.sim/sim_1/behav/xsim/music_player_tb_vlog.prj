@@ -1,0 +1,51 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_11.2.srcs/sources_1/new/checkerboard.v" \
+"../../../../project_11.2.srcs/sources_1/new/clk_divider.v" \
+"../../../../project_11.2.srcs/sources_1/new/h_counter.v" \
+"../../../../project_11.2.srcs/sources_1/new/pixel_gen_module.v" \
+"../../../../project_11.2.srcs/sources_1/new/topmod.v" \
+"../../../../project_11.2.srcs/sources_1/new/v_counter.v" \
+"../../../../project_11.2.srcs/sources_1/new/vga_sync.v" \
+"../../../../project_11.2.srcs/sources_1/new/vga_controller.v" \
+"../../../../project_11.2.srcs/sources_1/new/Segment_decoder.v" \
+"../../../../project_11.2.srcs/sources_1/new/demux_1_4.v" \
+"../../../../project_11.2.srcs/sources_1/new/mux_4_1.v" \
+"../../../../project_11.2.srcs/sources_1/new/TopLevelModule.v" \
+"../../../../project_11.2.srcs/sources_1/new/twocomplement.v" \
+"../../../../project_11.2.srcs/sources_1/new/ThreeBitFA.v" \
+"../../../../project_11.2.srcs/sources_1/new/fa.v" \
+"../../../../project_11.2.srcs/sources_1/new/ha.v" \
+"../../../../project_11.2.srcs/sources_1/new/myOR.v" \
+"../../../../project_11.2.srcs/sources_1/new/my_AND.v" \
+"../../../../project_11.2.srcs/sources_1/new/my_XOR.v" \
+"../../../../project_11.2.srcs/sources_1/new/adder_subtractor.v" \
+"../../../../project_11.2.srcs/sources_1/new/song_screen_pixel.v" \
+"../../../../project_11.2.srcs/sources_1/new/music_player_controller.v" \
+"../../../../project_11.2.srcs/sim_1/new/OR_tb.v" \
+"../../../../project_11.2.srcs/sim_1/new/S_testbench.v" \
+"../../../../project_11.2.srcs/sim_1/new/check_tb.v" \
+"../../../../project_11.2.srcs/sim_1/new/pix_gentb.v" \
+"../../../../project_11.2.srcs/sim_1/new/tb_clkdivider.v" \
+"../../../../project_11.2.srcs/sim_1/new/tb_hcounter.v" \
+"../../../../project_11.2.srcs/sim_1/new/tb_vcounter.v" \
+"../../../../project_11.2.srcs/sim_1/new/tb_vga_sync.v" \
+"../../../../project_11.2.srcs/sim_1/new/testbench_AND.v" \
+"../../../../project_11.2.srcs/sim_1/new/testbench_ThreeBit.v" \
+"../../../../project_11.2.srcs/sim_1/new/testbench_Xor.v" \
+"../../../../project_11.2.srcs/sim_1/new/testbench_adder_subtractor.v" \
+"../../../../project_11.2.srcs/sim_1/new/testbench_demux.v" \
+"../../../../project_11.2.srcs/sim_1/new/testbench_fa.v" \
+"../../../../project_11.2.srcs/sim_1/new/testbench_mux.v" \
+"../../../../project_11.2.srcs/sim_1/new/testbench_topmodule.v" \
+"../../../../project_11.2.srcs/sim_1/new/testnech_ha.v" \
+"../../../../project_11.2.srcs/sim_1/new/topmod_tb.v" \
+"../../../../project_11.2.srcs/sim_1/new/twocomplementTestbench.v" \
+"../../../../project_11.2.srcs/sim_1/new/vga_cont_tb.v" \
+"../../../../project_11.2.srcs/sim_1/new/music_player_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_2.srcs/sources_1/new/Segment_decoder.v" \
+"../../../../project_2.srcs/sources_1/new/TopLevelModule.v" \
+"../../../../project_2.srcs/sources_1/new/demux_1_4.v" \
+"../../../../project_2.srcs/sources_1/new/mux_4_1.v" \
+"../../../../project_2.srcs/sim_1/new/testbench_topmodule.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

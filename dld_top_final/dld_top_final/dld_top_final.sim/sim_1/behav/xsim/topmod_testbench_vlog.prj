@@ -1,0 +1,40 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../dldlab10.srcs/sim_1/new/OR_tb.v" \
+"../../../../dldlab10.srcs/sim_1/new/S_testbench.v" \
+"../../../../dldlab10.srcs/sources_1/new/Segment_decoder.v" \
+"../../../../dldlab10.srcs/sources_1/new/ThreeBitFA.v" \
+"../../../../dldlab10.srcs/sources_1/new/TopLevelModule.v" \
+"../../../../dldlab10.srcs/sources_1/new/adder_subtractor.v" \
+"../../../../dldlab10.srcs/sources_1/new/clk_divider.v" \
+"../../../../dldlab10.srcs/sources_1/new/demux_1_4.v" \
+"../../../../dldlab10.srcs/sources_1/new/fa.v" \
+"../../../../dldlab10.srcs/sources_1/new/h_counter.v" \
+"../../../../dldlab10.srcs/sources_1/new/ha.v" \
+"../../../../dldlab10.srcs/sources_1/new/mux_4_1.v" \
+"../../../../dldlab10.srcs/sources_1/new/myOR.v" \
+"../../../../dldlab10.srcs/sources_1/new/my_AND.v" \
+"../../../../dldlab10.srcs/sources_1/new/my_XOR.v" \
+"../../../../dldlab10.srcs/sim_1/new/tb_clkdivider.v" \
+"../../../../dldlab10.srcs/sim_1/new/tb_hcounter.v" \
+"../../../../dldlab10.srcs/sim_1/new/tb_vcounter.v" \
+"../../../../dldlab10.srcs/sim_1/new/testbench_AND.v" \
+"../../../../dldlab10.srcs/sim_1/new/testbench_ThreeBit.v" \
+"../../../../dldlab10.srcs/sim_1/new/testbench_Xor.v" \
+"../../../../dldlab10.srcs/sim_1/new/testbench_adder_subtractor.v" \
+"../../../../dldlab10.srcs/sim_1/new/testbench_demux.v" \
+"../../../../dldlab10.srcs/sim_1/new/testbench_fa.v" \
+"../../../../dldlab10.srcs/sim_1/new/testbench_mux.v" \
+"../../../../dldlab10.srcs/sim_1/new/testbench_topmodule.v" \
+"../../../../dldlab10.srcs/sim_1/new/testnech_ha.v" \
+"../../../../dldlab10.srcs/sources_1/new/topmod.v" \
+"../../../../dldlab10.srcs/sim_1/new/topmod_tb.v" \
+"../../../../dldlab10.srcs/sources_1/new/twocomplement.v" \
+"../../../../dldlab10.srcs/sim_1/new/twocomplementTestbench.v" \
+"../../../../dldlab10.srcs/sources_1/new/v_counter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

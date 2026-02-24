@@ -1,0 +1,38 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DLD_AA.srcs/sources_1/new/checkerboard.v" \
+"../../../../DLD_AA.srcs/sources_1/new/clk_divider.v" \
+"../../../../DLD_AA.srcs/sources_1/new/h_counter.v" \
+"../../../../DLD_AA.srcs/sources_1/new/pixel_gen_module.v" \
+"../../../../DLD_AA.srcs/sources_1/new/topmod.v" \
+"../../../../DLD_AA.srcs/sources_1/new/v_counter.v" \
+"../../../../DLD_AA.srcs/sources_1/new/vga_sync.v" \
+"../../../../DLD_AA.srcs/sources_1/new/vga_controller.v" \
+"../../../../DLD_AA.srcs/sources_1/new/song_screen_pixel.v" \
+"../../../../DLD_AA.srcs/sources_1/new/music_player_controller.v" \
+"../../../../DLD_AA.srcs/sources_1/new/clk_divider_25MHz.v" \
+"../../../../DLD_AA.srcs/sources_1/new/bram_reader.v" \
+"../../../../DLD_AA.srcs/sources_1/new/LED.v" \
+"../../../../DLD_AA.srcs/sim_1/new/S_testbench.v" \
+"../../../../DLD_AA.srcs/sim_1/new/check_tb.v" \
+"../../../../DLD_AA.srcs/sim_1/new/pix_gentb.v" \
+"../../../../DLD_AA.srcs/sim_1/new/tb_clkdivider.v" \
+"../../../../DLD_AA.srcs/sim_1/new/tb_hcounter.v" \
+"../../../../DLD_AA.srcs/sim_1/new/tb_vcounter.v" \
+"../../../../DLD_AA.srcs/sim_1/new/tb_vga_sync.v" \
+"../../../../DLD_AA.srcs/sim_1/new/testbench_adder_subtractor.v" \
+"../../../../DLD_AA.srcs/sim_1/new/testbench_demux.v" \
+"../../../../DLD_AA.srcs/sim_1/new/testbench_fa.v" \
+"../../../../DLD_AA.srcs/sim_1/new/testbench_topmodule.v" \
+"../../../../DLD_AA.srcs/sim_1/new/testnech_ha.v" \
+"../../../../DLD_AA.srcs/sim_1/new/topmod_tb.v" \
+"../../../../DLD_AA.srcs/sim_1/new/twocomplementTestbench.v" \
+"../../../../DLD_AA.srcs/sim_1/new/vga_cont_tb.v" \
+"../../../../DLD_AA.srcs/sim_1/new/music_player_tb.v" \
+"../../../../DLD_AA.srcs/sim_1/new/ws2812_test_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

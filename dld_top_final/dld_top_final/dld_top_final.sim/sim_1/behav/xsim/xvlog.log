@@ -1,0 +1,65 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/checkerboard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module checkerboard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/clk_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_counter
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'count' is not allowed [C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/h_counter.v:9]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'trig_v' is not allowed [C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/h_counter.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/pixel_gen_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/topmod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topmod
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_counter
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'count' is not allowed [C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/v_counter.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/vga_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/song_screen_pixel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module song_screen_pixel
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/music_player_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module music_player_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/clk_divider_25MHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_divider_25MHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/bram_reader.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sources_1/new/LED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ws2812_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/S_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/check_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module check_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/pix_gentb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pix_gentb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/tb_clkdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_clkdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/tb_hcounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hcounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/tb_vcounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_vcounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/tb_vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/testbench_adder_subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_adder_subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/testbench_demux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_demux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/testbench_fa.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_fa
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/testbench_topmodule.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench_topmodule
+WARNING: [VRFC 10-3522] missing or empty argument against format specification for 'monitor' [C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/testbench_topmodule.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/testnech_ha.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testnech_ha
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/topmod_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module topmod_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/twocomplementTestbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module twocomplementTestbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/vga_cont_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_cont_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/music_player_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_music_player
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.srcs/sim_1/new/ws2812_test_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ws2812_test_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aa09863/Desktop/DLD_AA/DLD_AA/DLD_AA.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
