@@ -20,12 +20,12 @@ The user toggles one of the first 5 FPGA switches to select a song, which is dec
 
 ## State Transition Diagram
 
-<img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/7e0d5b06-2d22-4c07-bbc5-4ed2de394ceb" />
+<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/7e0d5b06-2d22-4c07-bbc5-4ed2de394ceb" />
 
 
 ## Control Block 
 
-<img width="400" height="600" alt="image" src="https://github.com/user-attachments/assets/7a928f5f-f8b0-48eb-b768-1fbf57c86f5d" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/7a928f5f-f8b0-48eb-b768-1fbf57c86f5d" />
 
 
 
